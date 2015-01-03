@@ -1,0 +1,20 @@
+{
+  "name": "misfit",
+  "version": "0.0.0",
+  "authors": [
+    "jeonghwan <ej88ej@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "flexslider": "*",
+    "font-awesome": "~4.2.0"
+  }
+}
