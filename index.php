@@ -85,9 +85,9 @@ get_header(); ?>
 <!--      </div><!-- .content-area -->-->
     </div>
     <div class="col-md-4">
-      <?php get_sidebar(); ?>
+      <?php get_sidebar( 'right' ); ?>
     </div>
-  </div>
+  </div> <!-- .row -->
 
 
 <?php get_footer(); ?>

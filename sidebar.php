@@ -36,9 +36,9 @@ if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar(
 			</nav><!-- .social-navigation -->
 		<?php endif; ?>
 
-		<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+		<?php if ( is_active_sidebar( 'sidebar-right' ) ) : ?>
 			<div id="widget-area" class="" role="complementary">
-				<?php dynamic_sidebar( 'sidebar-1' ); ?>
+				<?php dynamic_sidebar( 'sidebar-right' ); ?>
 			</div><!-- .widget-area -->
 		<?php endif; ?>
 

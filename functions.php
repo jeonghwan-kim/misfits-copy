@@ -130,10 +130,19 @@ add_action( 'after_setup_theme', 'twentyfifteen_setup' );
  */
 function twentyfifteen_widgets_init() {
 	register_sidebar( array(
-			'name'          => __( 'Widget Area', 'twentyfifteen' ),
-			'id'            => 'sidebar-1',
+			'name'          => '우측 사이드바',
+			'id'            => 'sidebar-right',
 			'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentyfifteen' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h4 class="widget-title"><span>',
+			'after_title'   => '</span></h4>',
+	) );
+	register_sidebar( array(
+			'name'          => '하단 사이드바',
+			'id'            => 'sidebar-bottom',
+			'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentyfifteen' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s col-md-4">',
 			'after_widget'  => '</aside>',
 			'before_title'  => '<h4 class="widget-title"><span>',
 			'after_title'   => '</span></h4>',
