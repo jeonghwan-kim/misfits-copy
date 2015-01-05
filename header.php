@@ -30,4 +30,5 @@
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span>M</span>ISFITS</h1></a>
 		</div>
 	</header>
+	<?php get_sidebar( 'top' ); ?>
 

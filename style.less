@@ -34,6 +34,42 @@ html {
     }
   }
 }
+.sidebar-top {
+  margin-bottom: 40px;
+
+  .menu-item {
+    a {
+      color: #ffffff;
+      &:hover, &:focus {
+        text-decoration: none;
+
+      }
+    }
+    display: inline-block;
+    padding: 10px;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    background-color: @brand-danger;
+    &:hover, &:focus {
+      background-color: darken(@brand-danger, 15%);
+      color: darken(#ffffff, 15%);
+
+    }
+
+    .sub-menu {
+      .menu-item {
+        display: block;
+      }
+    }
+    .screen-reader-text {
+      clip: rect(1px, 1px, 1px, 1px);
+      height: 1px;
+      overflow: hidden;
+      position: absolute !important;
+      width: 1px;
+    }
+  }
+}
 .flexslider {
   border: none;
 
@@ -136,9 +172,41 @@ html {
         margin-top: -2px;
       }
     }
+
+    &.category-block {
+      .widget-title {
+        display: none;
+      }
+      .category-link {
+        margin-bottom: 15px;
+
+        a {
+          color: #ffffff;
+
+          .category-name {
+            .btn;
+            .btn-danger;
+            .angular;
+          }
+
+          .angle-right {
+            .btn;
+            .angular;
+            margin-left: -5px;
+            border-left: none;
+            background-color: darken(@brand-danger, 10%);
+          }
+        }
+      }
+    }
   }
 }
 
+.entry-meta {
+  a {
+    color: lighten(@gray-light, 30%);
+  }
+}
 footer.site-footer {
   background-color: @gray-lighter;
   padding: 25px 0;
